@@ -8,6 +8,7 @@ import {
   faFileVideo
  } from '@fortawesome/free-solid-svg-icons';
 
+
 class ListItem extends Component {
   render() {
 
@@ -15,7 +16,7 @@ class ListItem extends Component {
       "jpg": faFileImage,
       "mov": faFileVideo,
       "txt": faFileAlt,
-      "mp3": faFileVideo
+      "mp3": faFileAudio
     }
 
     return (

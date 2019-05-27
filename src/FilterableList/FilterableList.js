@@ -2,8 +2,10 @@ import React, { Component } from 'react';
 import ListItem from '../ListItem/ListItem';
 
 class FilterableList extends Component {
+  
   render() {
-    const { searchTerm, filterOption } = this.props;
+    const searchTerm = this.props.searchTerm;
+    const filterOption = this.props.filterOption;
     const list = this.props.files
         .filter(file => file.name.includes(searchTerm)
               && (filterOption === 'All' || file.status === filterOption))
